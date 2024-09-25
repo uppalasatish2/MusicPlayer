@@ -99,6 +99,7 @@ class PlayList extends Component {
   deleteSong = id => {
     const {initialPlayList} = this.state
     const filteredList = initialPlayList.filter(each => each.id != id)
+    console.log(filteredList)
     this.setState({
       initialPlayList: filteredList,
     })
